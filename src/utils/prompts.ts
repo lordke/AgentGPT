@@ -26,7 +26,7 @@ export const createModel = (settings: ModelSettings) => {
       maxTokens: _settings?.maxTokens || 400,
     },
     {
-      basePath: "https://api.openai-sb.com",
+      basePath: "https://api.openai-sb.com/v1",
     }
   );
 };

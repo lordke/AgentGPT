@@ -305,7 +305,7 @@ const testConnection = async (modelSettings: ModelSettings) => {
   // A dummy connection to see if the key is valid
   // Can't use LangChain / OpenAI libraries to test because they have retries in place
   return await axios.post(
-    "https://api.openai.com/v1/chat/completions",
+    "https://api.openai-sb.com/v1/chat/completions",
     {
       model: modelSettings.customModelName,
       messages: [{ role: "user", content: "Say this is a test" }],
